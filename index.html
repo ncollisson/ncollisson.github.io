@@ -2,14 +2,18 @@
 <head>
 
 <script>
-window.dataLayer = function test() {
-  this.hide = function test2() {};
-  this.hide.end = alert('test3');
-}
+  
+window.dataLayer = function test() {}
+wdl = window.dataLayer;
+wdl.hide = function test2() {};
+wdl.hide.end = function test3() {alert("test4")}
+
 </script>
 
 </head>
 <body>
+  
 Hello
+  
 </body>
 </html>
